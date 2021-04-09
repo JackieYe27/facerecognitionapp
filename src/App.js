@@ -77,7 +77,7 @@ class App extends React.Component {
   onBSubmit = () => {
     console.log('click')
     this.setState({imgUrl: this.state.input})
-      fetch('http://localhost:3000/imageurl', {
+      fetch('https://fullstack-facial-rec-app.herokuapp.com/imageurl', {
         method: 'post',
         headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
@@ -88,7 +88,7 @@ class App extends React.Component {
     .then(response => {
       console.log('hi', response)
       if (response) {
-        fetch('http://localhost:3000/image', {
+        fetch('https://fullstack-facial-rec-app.herokuapp.com/image', {
           method: 'put',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({

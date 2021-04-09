@@ -23,7 +23,7 @@ class Register extends React.Component {
     }
 
     onSubmitSignIn = (e) => {
-        fetch('http://localhost:3000/register', {
+        fetch('https://fullstack-facial-rec-app.herokuapp.com/register', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -39,6 +39,7 @@ class Register extends React.Component {
                 this.props.onRouteChange('home');
             }
         })
+        .catch(err => console.log(err));
     }
 
     render() {
