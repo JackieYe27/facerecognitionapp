@@ -1,8 +1,1 @@
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm dev`
-
-This starts the project locally.
+Front end code for a full stack facial recoginition app that uses Clarifai's API to detect the facial features in an image. This project is delopyed on Heroku. The back end code can be found at https://github.com/JackieYe27/face-api . 
